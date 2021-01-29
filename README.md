@@ -1,8 +1,10 @@
 # LGEssEnervu Binding
+
 This binding is meant to retrieve data of the LG Ess Powerrouter/Battery bundle.
 It is designed to retrieve data either from the lg cloud (https://enervu.lg-ess.com) or via WLAN directly from the local device.
 
 ## Supported Things
+
 The following thing types are supported:
 
 |Thing                |ID                         |Description                 |
@@ -18,6 +20,7 @@ device does not respond on the first try.
 
 
 ## Getting started
+
 ### Obtaining the password for accessing the device via local network.
 In order to get the device password you need to be within the wifi provided by the box.
 Once you are connected to the wifi of your device send a json request to
@@ -34,8 +37,8 @@ Once you are connected to the wifi of your device send a json request to
 |kwhPrice|decimal|optional|general| Price of the kWh paid to local provider
 |kwhPriceSell|decimal|optional|general| Price local provider pays for selling power
 |co2Factor|decimal|optional| general | Factor of the powermix (e.g. 0.71% of bought power is from green energy
-|refreshInterval | integer |local | local | How often shall data be polled (in seconds)
-|hostName | string | required if source is lan |local| hostname/ip of local device
+|refreshInterval | integer |optional | local | How often shall data be polled (in seconds)
+|hostName | text | required if source is lan |local| hostname/ip of local device
 |passwordLocal | text | required if source is lan | local | password of the local device
 |user | text | required if source is cloud | cloud |username / email used for login at https://enervu.lg-ess.com
 |passwordCloud | text| required if source is cloud|cloud|password used for login at https://enervu.lg-ess.com
