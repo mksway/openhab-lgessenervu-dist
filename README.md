@@ -64,7 +64,8 @@ _Note that it is planned to generate some part of this based on the XML files wi
 | currentPowerFromPV| Number:Power| Current power produced by PV  |
 | dailyPowerFromPV| Number:Power| Daily power produced by PV  |
 | monthlyPowerFromPV| Number:Power| Monthly power produced by PV |
-| batterySoc| Number:Power| Current battery SOC state  |
+| selfConsumption| Number | Daily self consumption of power |
+| batterySoc| Number | Current battery SOC state  |
 | batteryStatus| String | Current battery operating mode (idle, charging,discharging)  |
 | batteryWintermode| Switch| Status of wintermode  |
 | currentPowerChargingToBattery| Number:Power| Current power used to charge the battery  |
